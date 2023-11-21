@@ -8,8 +8,6 @@ sudo apt install docker.io -y
 sudo apt install docker-ce -y
 docker --version
 docker compose version
+sudo usermod -aG docker $USER
 echo "if you see versions of docker and docker compose, then they were successfully installed"
-echo -n "please, execute the command below:\n"
-echo -n "usermod -aG docker (your username)\n"
-echo "after that better restart your system"
-
+echo "it it recommended to reboot your system in case you are not root"
